@@ -5,8 +5,8 @@ const ItemList = () => {
   const [taskName, setTaskName] = useState("");
   const [taskState, setTaskState] = useState(false);
   const [items, setItems] = useState([
-    { name: "早起き", state: false },
-    { name: "授業課題", state: false },
+    // { name: "早起き", state: false },
+    // { name: "授業課題", state: false },
   ]);
   return (
     // ここにTaskコンポーネントを並べる
@@ -31,11 +31,11 @@ const ItemList = () => {
             value={taskName}
           />
         </label>
-        <label htmlFor="taskState">
+        <label htmlFor="taskAddState">
           完了：
           <input
             type="checkbox"
-            id="taskState"
+            id="taskAddState"
             onChange={(e) => {
               setTaskState(e.target.checked);
             }}
