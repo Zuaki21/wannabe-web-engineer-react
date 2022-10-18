@@ -4,7 +4,7 @@ import { useState } from "react";
 const ItemList = () => {
   const [itemName, setItemName] = useState("");
   const [itemPrice, setItemPrice] = useState(0);
-  const [items,setItems] = useState([
+  const [items, setItems] = useState([
     { name: "りんご", price: 300 },
     { name: "バナナ", price: 200 },
     { name: "みかん", price: 500 },
